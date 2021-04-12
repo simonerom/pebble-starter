@@ -21,3 +21,9 @@ As Pebble Tracker produces and transmits data messages over the MQTT protocol, y
 The data relayer is a small piece of software in charge of fetching the data points received by the backend and forward them to the smart contracts that will actually make use of the data by first verifying integrity and device authorizations, then triggering required actions depending on the dApp logic. In this context, the Relayer will use the [min.io API](https://docs.min.io/docs/javascript-client-api-reference.html) on one side to access the data stored in the backend, and the [IoTeX SDK](https://docs.iotex.io/developer/sdk/overview.html) on the other side to forward the data points to the smart relevant contracts.
 
 ## Smart Contracts
+The Smart contracts componentes represent the actual dApp that make use of the verifiable data from one or more Pebble Trackers. Whatever the dApp is meant to do, it will for sure require some code to actually receive a data point and verify the signature. Such a "Verifier Contract" would take a data point in input and return the address of the signer if the signature is valid or 0x otherwise:
+
+<img src="https://user-images.githubusercontent.com/11096047/114438947-b0fbf980-9bc8-11eb-9391-b439d36b6837.png" width="650px">
+
+
+
