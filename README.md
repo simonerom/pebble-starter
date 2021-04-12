@@ -4,7 +4,8 @@ Pebble Tracker is a multi-sensor **IoT data oracle** that uses a tamper-proof se
 
 This repository is intended for developers who want to get started with pebble tracker and take advantage of the verifiable IoT data into their decentralized applications. The image below shows the components required for the simplest verifiable data flow, from Pebble Tracker to a smart contract: 
 
-![image](https://user-images.githubusercontent.com/11096047/114433787-85761080-9bc2-11eb-9fb6-d1a2540ab58e.png)
+![image](https://user-images.githubusercontent.com/11096047/114436672-e81cdb80-9bc5-11eb-9de4-32551aa22ef2.png)
+
 
 Let's examine these components one by one:
 
